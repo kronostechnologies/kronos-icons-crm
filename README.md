@@ -6,7 +6,7 @@ Here is the canonical source of the SVG icons of the Kronos CRM.
 How is this used
 ----------------
 
-This repo is use as a git submodule in the in the
+This repo is used as a git submodule in the in the
 `img/svg/symbols/icons/` repository of the CRM.
 
 From the CRM project's root:
@@ -22,7 +22,7 @@ file. Right now, it is done with a grunt task called
 
 ### Ouput Example
 
-The generated file is `public/img/icons.svg`.
+The generated file is `./public/img/icons.svg`.
 
 ```
 <svg class="svg-symbols visuallyhidden" xmlns="http://www.w3.org/2000/svg">
@@ -49,8 +49,7 @@ The generated file is `public/img/icons.svg`.
 </button>
 ```
 
-
-For the SVG Editors (designers)
--------------------------------
+For the SVG contributors (designers)
+------------------------------------
 
 *WIP*
