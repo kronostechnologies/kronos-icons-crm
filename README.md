@@ -14,6 +14,10 @@ From the CRM project's root:
 1. `git submodule add git@github.com:kronostechnologies/kronos-icons-crm.git ./img/svg/symbols/icons`
 2. `git submodule update --init`
 
+Pour `checked out` aux dernières versions des submodules :
+
+* `git submodule update --recursive --remote`.
+
 Then all those files must be concatenated and converted into
 [symbols](http://devdocs.io/svg/element/symbol) in a single SVG
 file. Right now, it is done with a grunt task called
