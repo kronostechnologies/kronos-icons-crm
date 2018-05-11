@@ -52,4 +52,4 @@ The generated file is `./public/img/icons.svg`.
 For the SVG contributors (designers)
 ------------------------------------
 
-*WIP*
+*Soon*
