@@ -11,7 +11,7 @@ This repo is used as a git submodule in the in the
 
 From the CRM project's root:
 
-1. `git clone git@github.com:kronostechnologies/kronos-icons-crm.git ./img/svg/symbols/icons`
+1. `git submodule add git@github.com:kronostechnologies/kronos-icons-crm.git ./img/svg/symbols/icons`
 2. `git submodule update --init`
 
 Then all those files must be concatenated and converted into
