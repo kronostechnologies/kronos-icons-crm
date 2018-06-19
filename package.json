@@ -1,0 +1,11 @@
+{
+  "name": "kronos-icons-crm",
+  "version": "1.0",
+  "description": "Here is the canonical source of the SVG icons of the Kronos CRM.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kronostechnologies/kronos-icons-crm.git"
+  },
+  "author": "Team Design of Kronos Technologies",
+  "homepage": "https://github.com/kronostechnologies/kronos-icons-crm.git#readme"
+}
