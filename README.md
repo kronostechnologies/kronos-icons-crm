@@ -22,13 +22,27 @@ This repo is used as a node dependency module:
 
 So after an `npm install` it's downloaded here `node_modules/kronos-icons-crm/`.
 
-From the CRM project's root:
-
 Then all those files must be concatenated and converted into
 [symbols](http://devdocs.io/svg/element/symbol) in a single SVG
 file. Right now, it is done with a grunt task called
 `svg_symbols`. Behind that task there's the plugin
 [grunt-svg-symbols](https://www.npmjs.com/package/grunt-svg-symbols).
+
+```
+svg_symbols: {
+    options: {
+        className: 'svg-symbols visuallyhidden',
+        currentColor: true,
+        precision: 3,
+        preserveViewBox: true,
+    },
+    build: {
+        files: {
+            'public/img/sprite-symbols.svg': ['img/svg/symbols/**/*.svg', 'node_modules/kronos-icons-crm/**/*.svg'],
+        },
+    }
+}
+```
 
 ### Ouput Example
 
