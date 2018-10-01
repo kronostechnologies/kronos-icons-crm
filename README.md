@@ -6,17 +6,23 @@ Here is the canonical source of the SVG icons of the Kronos CRM.
 How is this used
 ----------------
 
-This repo is used as a git submodule in the in the
-`img/svg/symbols/icons/` repository of the CRM.
+This repo is used as a node dependency module:
+
+```
+{
+    [...],
+    "devDependencies": {
+        [...],
+        "kronos-icons-crm": "github:kronostechnologies/kronos-icons-crm",
+        [...],
+    }
+    [...],
+}
+```
+
+So after an `npm install` it's downloaded here `node_modules/kronos-icons-crm/`.
 
 From the CRM project's root:
-
-1. `git submodule add git@github.com:kronostechnologies/kronos-icons-crm.git ./img/svg/symbols/icons`
-2. `git submodule update --init`
-
-Pour `checked out` aux dernières versions des submodules :
-
-* `git submodule update --recursive --remote`.
 
 Then all those files must be concatenated and converted into
 [symbols](http://devdocs.io/svg/element/symbol) in a single SVG
@@ -26,7 +32,7 @@ file. Right now, it is done with a grunt task called
 
 ### Ouput Example
 
-The generated file is `./public/img/icons.svg`.
+The generated file is `./public/img/sprite-symbols.svg`.
 
 ```
 <svg class="svg-symbols visuallyhidden" xmlns="http://www.w3.org/2000/svg">
