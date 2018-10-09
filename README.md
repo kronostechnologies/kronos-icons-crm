@@ -6,7 +6,7 @@ Here is the canonical source of the SVG icons of the Kronos CRM.
 How is this used
 ----------------
 
-This repo is used as a node dependency module:
+This repo is used as a node dependency module in `package.json`:
 
 ```
 {
